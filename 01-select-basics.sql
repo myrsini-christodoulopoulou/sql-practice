@@ -8,3 +8,9 @@ INSERT INTO tickets VALUES (1,1,'Δεν εμφανίζεται η αναφορά
 
 -- Exercise 1: clients from Thessaloniki
 SELECT * FROM clients WHERE city = 'Θεσσαλονίκη';
+
+-- Exercise 2: name and city from clients
+SELECT name, city FROM clients;
+
+-- Exercise 3: price from properties
+SELECT price FROM properties;
