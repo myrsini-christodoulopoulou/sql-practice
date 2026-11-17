@@ -14,3 +14,17 @@ SELECT name, city FROM clients;
 
 -- Exercise 3: price from properties
 SELECT price FROM properties;
+
+-- Exercise 4: available properties in Thessaloniki under 100000
+SELECT * FROM properties
+WHERE city = 'Θεσσαλονίκη'
+  AND status = 'διαθέσιμο'
+  AND price < 100000;
+
+-- Exercise 5: clients without email (NULL needs IS NULL, not = 'null')
+SELECT * FROM clients
+WHERE email IS NULL;
+
+-- Exercise 6: clients whose name starts with Π (LIKE with % wildcard)
+SELECT * FROM clients
+WHERE name LIKE 'Π%';
