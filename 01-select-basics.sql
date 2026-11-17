@@ -28,3 +28,4 @@ WHERE email IS NULL;
 -- Exercise 6: clients whose name starts with Π (LIKE with % wildcard)
 SELECT * FROM clients
 WHERE name LIKE 'Π%';
+-- LIKE without % = exact match; % = wildcard
